@@ -3,11 +3,35 @@
     padding: 0;
 }
 
-h1,h2 {
-    color: #00c3ff ;
-    width: 200px;
-    text-align: center;
-    background-image: linear-gradient(to left , red 0% , green 50% , blue 100% );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+nav{
+    background: #1a1244;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px ;
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin: 5px 10px ;
+}
+nav ul li a { 
+    text-decoration: none;
+    font-size: 1.32rem;
+    color: #e0d8d8;
+    font-weight: bold;
+    padding: 10px 16px ;
+    transition: .5s;
+}
+nav ul li a:hover {
+    background: #000;
+    color: #f00;
+    border-radius: 8px;
+}
+
+nav div{
+    color: #fff;
 }
