@@ -23,6 +23,9 @@ nav {
     padding: 0px 150px ;
     overflow: hidden;
     border-bottom: 4px solid #04191C;
+    
+    position: sticky;
+    top: 0;
 }
 nav ul {
     display: flex;
@@ -38,7 +41,7 @@ nav ul li a {
     padding: 12px 15px;
     color: #37cae4;
     
-    transition: .5s ;
+    transition: .3s ;
 
     position: relative;
     display: inline-block;
@@ -235,7 +238,7 @@ main {
     height: 100%;
     
     cursor: pointer;
-    transition: .4s;
+    transition: .2s;
 }
 .single_image:hover img {
     transform: scale(1.1);
