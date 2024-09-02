@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about_us__container {
+    width: 1000px;
+    margin: 100px auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;    
+    border: red 2px solid;
+}
+
+.about_us_text {
+    padding: 50px 0;
+    color: #243febe9;
+}
+.about_us_text h2 {
+    font-size: 70px;
+}
+.about_us_text p {
+    margin: 20px 0;
+    font-size: 25px ;
+}
+
+.about_us_img img {
+    width: 700px;
+}
+.about_us_text a button{
+    padding: 10px 35px;
+    font-size: 20px;
+    background-color: #1433ffd5;
+    color: #ffff;
+    margin-top: 50px;
+}
