@@ -3,6 +3,156 @@
     padding: 0;
 }
 
+/* navbar code start  */
+
+nav h2 {
+    width: 200px;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+nav h2 span {
+    color: #adff;
+}
+
+/* nav-animation code start */
+nav {
+    background: #151515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px ;
+    overflow: hidden;
+    border-bottom: 4px solid #04191C;
+    
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 5px 12px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 15px;
+    color: #37cae4;
+    
+    transition: .3s ;
+
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+nav ul li a:hover {
+    color: #000000e7;
+    background-color: #07ffe6;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #0effefe1,
+                 0 0 25px #0effefe1,
+                 0 0 50px #0effefe1,
+                 0 0 200px #0effefe1;
+    -webkit-box-reflect: below 1px linear-gradient(transparent , #0005);
+}
+
+nav ul li:first-child a {
+    filter: hue-rotate(0deg);
+}
+nav ul li:nth-child(2) a {
+    filter: hue-rotate(55deg);
+}
+nav ul li:nth-child(3) a {
+    filter: hue-rotate(110deg);
+} 
+nav ul li:nth-child(4) a {
+    filter: hue-rotate(225deg);
+}
+nav ul li:last-child a {
+    filter: hue-rotate(320deg);
+}
+
+nav ul li a span {
+    position: absolute;
+    display: block;
+}
+nav ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient( transparent , #00ffe5);
+    animation: animate1 1s infinite;
+}
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+nav ul li a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient( transparent , #00ffe5);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+} 
+ 
+nav ul li a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient( transparent , #00ffe5);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+nav ul li a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient( transparent , #00ffe5);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* navbar code finised */
+
 .contact_container{
     width: 800px;
     margin: 0 auto;
